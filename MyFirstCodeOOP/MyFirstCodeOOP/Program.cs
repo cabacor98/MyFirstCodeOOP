@@ -22,6 +22,20 @@ namespace MyFirstCodeOOP
 
                 var dateObject = new Date(year, month, day);
                 Console.WriteLine(dateObject.ToString());
+
+                Console.WriteLine("-------------------New class-----------------");
+
+                Employee salaryEmployee = new SalaryEmployee()
+                {
+                    Id= 100,
+                    FirstName = "Maria",
+                    LastName= "Posada",
+                    BirthDate= new Date(1950,2,5),
+                    HiringDate = new Date(2021, 12, 3),
+                    IsActive=true,
+                    Salary = 20000.34M
+                };
+                Console.WriteLine(salaryEmployee);
             }
             catch (Exception ex)
             {

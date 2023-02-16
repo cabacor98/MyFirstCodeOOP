@@ -23,8 +23,8 @@ namespace MyFirstCodeOOP
         public override string ToString()
         {
             return $"--EMPLOYEE--\n\t ID:{Id} \n\t First Name: {FirstName}" +
-                $"\n\t Last Name: {LastName} \n\t Birth Day:{BirthDate}" +
-                $"\n\t Hiring Date:{HiringDate} \n\t Is Active?:{IsActive}";
+                $"\n\t Last Name: {LastName} \n\t Birth Day: {BirthDate}" +
+                $"\n\t Hiring Date: {HiringDate} \n\t Is Active?: {IsActive}";
         }
 
         #endregion
