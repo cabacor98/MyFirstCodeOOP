@@ -17,7 +17,7 @@ namespace MyFirstCodeOOP
                 Console.WriteLine("Enter the Month:");
                 month = int.Parse(Console.ReadLine());
 
-                Console.WriteLine("Enter the Year:");
+                Console.WriteLine("Enter the Day:");
                 day = int.Parse(Console.ReadLine());
 
                 var dateObject = new Date(year, month, day);
@@ -27,13 +27,13 @@ namespace MyFirstCodeOOP
 
                 Employee salaryEmployee = new SalaryEmployee()
                 {
-                    Id= 100,
+                    Id= int.Parse(Console.ReadLine()),
                     FirstName = "Maria",
                     LastName= "Posada",
-                    BirthDate= new Date(1950,2,5),
-                    HiringDate = new Date(2021, 12, 3),
+                    BirthDate=new Date(int.Parse(Console.ReadLine()), int.Parse(Console.ReadLine()), int.Parse(Console.ReadLine())),
+                    HiringDate = new Date(int.Parse(Console.ReadLine()), int.Parse(Console.ReadLine()), int.Parse(Console.ReadLine())),
                     IsActive=true,
-                    Salary = 20000.34M
+                    Salary = decimal.Parse(Console.ReadLine())
                 };
                 Console.WriteLine(salaryEmployee);
             }
